@@ -9,6 +9,12 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+// 🔥 YE NAYA CODE ADD KARO (Home Route)
+app.get('/', (req, res) => {
+    res.send("Backend is Running! 🚀");
+});
+
+// ... baaki ka code same rahega ...
 
 // JSON Files
 const DB_CONTRIBUTIONS = 'contributions.json';
